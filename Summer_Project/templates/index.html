@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HJSS - Home</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <header class="header">
+            <div>
+                <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="Logo" style="height: 60px; width: 100px;">
+                <h1>Hatfield Junior Swimming School</h1>
+            </div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="{{ url_for('register') }}">Register</a>
+                <a href="login.html">Login</a>
+                <a href="timetable.html">Timetable</a>
+                <input type="text" placeholder="Search">
+                <select>
+                    <option>English</option>
+                    <option>Spanish</option>
+                    <option>Arabic</option>
+                    <option>Dutch</option>
+                    <option>French</option>
+                    <option>Italian</option>
+                    <option>German</option>
+                    <option>Portuguese</option>
+                    <option>Russian</option>
+                </select>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <img src="{{ url_for('static', filename='images/banner.png') }}" alt="Banner">
+        </section>
+
+        <section class="welcome">
+            <div class="text">
+                <h2>Welcome to Hatfield Junior Swimming School</h2>
+                <p>We are delighted to welcome you to Hatfield Junior Swimming School.</p>
+ 
+                <p>At HJSS, we envision a vibrant and supportive learning environment where every swimmer is encouraged to grow in confidence, skill, and resilience. We are committed to fostering a culture where achievement is celebrated, challenges are embraced, and learners feel empowered to reach their full potential—both in and out of the pool.</p>
+ 
+                <p>Our goal is for every swimmer, coach, and family to feel a strong sense of belonging to our school. This sense of community is built on a foundation of aspiration, encouragement, and a shared commitment to excellence. We set high standards for conduct and sportsmanship, believing that through kindness, respect, and dedication, our swimmers will leave us as confident, considerate, and well-rounded individuals, ready for the next step in their journey.</p>
+ 
+                <p>We believe it is our responsibility to provide:</p>
+                <ul>
+                    <li>Exceptional <strong>Instruction</strong></li>
+                    <li>Thoughtful <strong>Care</strong></li>
+                    <li>A wide range of <strong>Opportunities</strong> for every learner</li>
+                </ul>
+ 
+                <h3>Our Core Values</h3>
+                <ul>
+                    <li><strong>To be engaged</strong> – participating actively in every lesson</li>
+                    <li><strong>To be kind and respectful</strong> – towards coaches, peers, and self</li>
+                    <li><strong>To do no harm</strong> – promoting safety and integrity in and out of the water</li>
+                </ul>
+ 
+                <p>We believe that by living these values, our swimmers will grow into responsible, self-aware members of the school and the wider community.</p>
+ 
+                <p>Our expectations are high, and our team of experienced and passionate coaches work hard to deliver fun, inspiring, and structured lessons. We also offer opportunities for swimmers to discover their strengths, develop new skills, and build lasting friendships through team activities and events.</p>
+ 
+                <p>HJSS is proud to be a part of a caring and connected community. We’re excited to support your child on their swimming journey, and we look forward to helping every learner thrive.</p>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="timetable-day.html">View Timetable by Day</a></li>
+                    <li><a href="timetable-grade.html">View Timetable by Grade</a></li>
+                    <li><a href="timetable-coach.html">View Timetable by Coach</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="alerts">
+            <div class="alert-box">
+                <img src="{{ url_for('static', filename='images/Swimwear.png') }}" alt="Equipment Icon">
+                <p>PLEASE BRING YOUR OWN SWIMMING EQUIPMENT PLEASE, AS WE DO NOT PROVIDE THE STUDENTS SWIMMING EQUIPMENT!!!</p>
+            </div>
+            <div class="alert-box">
+                <img src="{{ url_for('static', filename='images/Safety.png') }}" alt="Warning Icon">
+                <p>DO NOT JUMP INTO THE SWIMMING POOL WITHOUT AN INSTRUCTOR!!!</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="school-info">
+                <h3>HATFIELD JUNIOR SWIMMING SCHOOL</h3>
+                <p>Our School is a part of the allstreams schools trust, registered in England and Wales.</p>
+                <p>Company number: 0123456789</p>
+                <p>Registered Address: Middle of Nowhere, Nowhere land, Nowhere city, NO9 9XX</p>
+                <p>Tel: 01234 056789</p>
+                <p>Email: info@trustme.org.uk</p>
+            </div>
+            <div class="contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@hjss.com</p>
+                <p>Phone: +44 1234 567890</p>
+                <div class="socials">
+                    <a href="https://www.youtube.com"><img src="{{ url_for('static', filename='images/yt.png') }}" alt="Youtube"></a>
+                    <a href="https://www.instagram.com"><img src="{{ url_for('static', filename='images/ig.png') }}" alt="Instagram"></a>
+                    <a href="https://www.facebook.com"><img src="{{ url_for('static', filename='images/fb.png') }}" alt="Facebook"></a>
+                </div>
+                <div>
+                    <p>&copy; 2025 Hatfield Junior Swimming School</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

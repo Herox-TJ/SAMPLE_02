@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - HJSS</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body class="login-page">
+        <header class="header">
+            <div>
+                <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="Logo" style="height: 60px; width: 100px;">
+                <h1>Hatfield Junior Swimming School</h1>
+            </div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+                <a href="login.html">Login</a>
+                <a href="timetable.html">Timetable</a>
+                <input type="text" placeholder="Search">
+                <select>
+                    <option>English</option>
+                    <option>Spanish</option>
+                    <option>Arabic</option>
+                    <option>Dutch</option>
+                    <option>French</option>
+                    <option>Italian</option>
+                    <option>German</option>
+                    <option>Portuguese</option>
+                    <option>Russian</option>
+                </select>
+            </nav>
+        </header>
+        <div class="register-container">
+            <form class="register-form" method="POST" action="/register">
+                <h2>Learner Registration</h2>
+                
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="number" name="age" placeholder="Age" required>
+                
+                <div class="gender">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+                
+                <input type="text" name="emergency_contact" placeholder="Emergency Contact" required>
+                
+                <select name="grade" required>
+                    <option value="0">Grade 0</option>
+                    <option value="1">Grade 1</option>
+                    <option value="1">Grade 2</option>
+                    <option value="1">Grade 3</option>
+                    <option value="1">Grade 4</option>
+                    <option value="1">Grade 5</option>
+                </select>
+                
+                <input type="text" name="medical_notes" placeholder="Medical Conditions/Notes">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                
+                <button type="submit">REGISTER</button>
+                
+                <div class="register-link">
+                    Already have an account? <a href="login.html">Login here!</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

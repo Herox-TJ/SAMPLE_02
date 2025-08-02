@@ -1,0 +1,335 @@
+/* HOME PAGE */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7;
+    color: #000;
+}
+
+.header {
+    background-color: #073c7e;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar input[type="text"] {
+    padding: 5px;
+}
+
+.navbar select {
+    padding: 5px;
+}
+
+.hero {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.welcome {
+    background: #d2ecf2;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text {
+    flex: 1 1 60%;
+    padding: 20px;
+}
+
+.quick-links {
+    flex: 1 1 30%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.quick-links img {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin: 10px 0;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #073c7e;
+    font-weight: bold;
+}
+
+.alerts {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.alert-box {
+    border: 2px solid red;
+    padding: 15px;
+    flex: 1 1 40%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fce4e4;
+    font-weight: bold;
+}
+
+.alert-box img {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #073c7e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.footer h3, .footer h4 {
+    margin-top: 0;
+}
+
+.school-info, .contact {
+    flex: 1 1 45%;
+}
+
+.socials a img {
+    height: 30px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+/* LOGIN PAGE */
+
+.login-page {
+    background-image: url('../images/background.png'); /* Adjust path if needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.login-form {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.login-form h2 {
+    color: #2b78c5;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form .remember {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #2b78c5;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+}
+
+.login-form .remember input {
+    margin-right: 8px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4da3ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #2b78c5;
+}
+
+.login-form .register-link {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #2b78c5;
+}
+
+.login-form .register-link a {
+    color: #2b78c5;
+    text-decoration: none;
+}
+
+.login-form .register-link a:hover {
+    text-decoration: underline;
+}
+
+/* REGISTER PAGE */
+
+.register-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.register-form {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+}
+
+.register-form h2 {
+    color: #2b78c5;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="number"],
+.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.register-form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+.register-form .gender {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4da3ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+    background-color: #2b78c5;
+}
+
+.register-form .register-link {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #2b78c5;
+}
+
+.register-form .register-link a {
+    color: #2b78c5;
+    text-decoration: none;
+}
+
+.register-form .register-link a:hover {
+    text-decoration: underline;
+}
+
+/* TIMETABLE PAGE */
